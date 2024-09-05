@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document01</title>
+
+    <style>
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+            width: 100%;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            max-width: 1500px;
+            padding: 20px;
+        }
+
+        .buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 50%;
+            max-width: 400px;
+        }
+
+        img {
+            width: 35%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            color: #333333;
+            margin-bottom: 20px;
+        }
+
+        div {
+            width: 100%;
+            margin-bottom: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.9rem;
+            color: #555;
+            background-color: #f0f0f0;
+            width: 100%;
+        }
+
+        @media (max-width: 800px) {
+            .container {
+                flex-direction: column;
+            }
+
+            img {
+                width: 80%;
+                max-width: 300px;
+                margin-bottom: 15px;
+            }
+
+            h3 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-size: 1rem;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="content">
+        <div class="container">
+            <img src="./R Mitchum dope.webp" alt="Robert Mitchum y Lila Leeds">
+
+            <div class="buttons-container">
+                <h3>LA APP DE LA MARCHUKI DE MITCHUM Y LEEDS</h3>
+
+                <div>
+                    <p>Cuando tengas la imperante necesidad de consumir, pulsa este botón:</p>
+                    <button id="Boton01">👃 ¿Cuánto tienes / Cuánto quieres? 👃</button>
+                    <p id="mensaje01"></p> 
+                </div>
+
+                <div>
+                    <p>Dormir es importante para el cuidado de la piel, la fiesta lo es para el cuidado del alma:</p>
+                    <button id="Boton02">🛏️ En el fondo eres libre de hacer lo que te plazca. 🎉</button>
+                    <p id="mensaje02"></p> 
+                </div>
+
+                <div>
+                    <p>¿Te gusta el guateque y el sol? El alpiste es el desayuno de los campeones:</p>
+                    <button id="Boton03"> ¿Churros o tubo?</button>
+                    <p id="mensaje03"></p> 
+                </div>
+            </div>
+
+            <img src="./R Mitchum dope.webp" alt="Robert Mitchum y Lila Leeds">
+        </div>
+    </div>
+
+    <footer>©️ Forjado con orgullo en Orodruin por Lila Leeds y Robert Mitchum.</footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
+
